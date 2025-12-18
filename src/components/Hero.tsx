@@ -56,17 +56,12 @@ export const Hero = () => {
 
           {/* Portrait */}
           <div className="order-1 lg:order-2 flex justify-center lg:justify-end fade-in-up stagger-2">
-            <div className="relative">
-              <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden border-2 border-border shadow-elevated">
-                <img
-                  src={sophiePortrait}
-                  alt="Sophie Roach - Industrial Design Student"
-                  className="w-full h-full object-cover object-center"
-                />
-              </div>
-              {/* Decorative element */}
-              <div className="absolute -bottom-4 -right-4 w-24 h-24 border-2 border-primary/30 rounded-full" />
-              <div className="absolute -top-4 -left-4 w-16 h-16 bg-primary/10 rounded-full" />
+            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-2 border-border shadow-elevated">
+              <img
+                src={sophiePortrait}
+                alt="Sophie Roach - Industrial Design Student"
+                className="w-full h-full object-cover object-center"
+              />
             </div>
           </div>
         </div>

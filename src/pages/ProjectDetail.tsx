@@ -6,7 +6,9 @@ import studioProjectsCover from "@/assets/studio-projects-cover.jpeg";
 interface StudioProject {
   title: string;
   description: string;
+  processDescription?: string;
   processPdf?: string;
+  images?: string[];
 }
 
 const studioProjects: StudioProject[] = [
@@ -17,11 +19,27 @@ const studioProjects: StudioProject[] = [
   },
   {
     title: "Wooden Mallet: Exploration of Material Integrity",
-    description: "Designed and built a wooden mallet with a detachable handle, crafted from a single slab of hardwood. Inspired by the idea of simplicity in form to expose and highlight the flaws of the raw material, which are the integral factor in the composition's visual appeal.",
+    description: "For this project, I designed and built a wooden mallet with a detachable handle, crafted from a single slab of hardwood. My inspiration came from the idea of simplicity in form, in turn to expose and highlight the flaws of the raw material, which are the integral factor in the composition's visual appeal. I wanted the design to feel purposeful, where every curve and connection reflected both function and craft.",
+    processDescription: "I created my first shop orthographic drawing to guide fabrication, then used laser cutting to translate digital precision into physical components. By calculating the taper angle of the detachable handle, I combined design intuition with mathematical accuracy, bridging technical drawing and hands-on making. This project deepened my appreciation for craftsmanship, material honesty, and the integration of design thinking into physical making.",
+    images: [
+      "https://lh3.googleusercontent.com/sitesv/AAzXCkcTEfIHc3Ph9MiJFKzyQHUyZj5taHUiNk80iwmP6UInOa3r9VKViukxv7gLiiGF7yw1pvXkBtdzrEb88gEJw6rdI4xHfNaw0Snh3rjYM6FN8tbeQD9D4rin1MCud3Ckav23P120K7-N9M3JQSdO1Tw7VsJYe_la13HiE0xCh4qTInXKJyvKIevYMnnJS8OEdrbEdppNw4ztVT7sjopzSj6wLp8P83EPcdAj6aQ=w1280",
+    ],
   },
   {
     title: "Spatial Composition: Interaction of Line and Plane",
-    description: "Inspired by the organic form of a flower, this composition explores the relationship between line and plane through curved paper surfaces and flowing wire elements. The design captures the sense of balance and movement found in nature, emphasizing how simple materials can express spatial harmony.",
+    description: "Inspired by the organic form of a flower, this composition explores the relationship between line and plane through curved paper surfaces and flowing wire elements. The design captures the sense of balance and movement found in nature, emphasizing how simple materials can express spatial harmony. My goal was to capture the dynamism and structural integrity found in natural forms while using minimal materials: paper and wire.",
+    processDescription: "I learned to solder wire for the first time, refining precision and control while constructing delicate linear connections. Working with cardstock as a new material, I explored how subtle bends and folds could define planar structure, and by using markers for shading, I developed a deeper understanding of light, shadow, and depth in visual presentation.",
+    images: [
+      "https://lh3.googleusercontent.com/sitesv/AAzXCkdGqbb8DdGEOZqFQzRLMAfj03G0f5tHYYJ6tKKR4UdSFVkz0jGoq-4XCkGb3UYlUZ1f84PCjPpklN01t0c3t1P0QyVTlymtFMZ46SR0QJuvrnc_TNH_CC_OSbaVVYOfcQPnjtBTIAnMM-qmkGnpFPZn7YNql9Ryu_vcHZq08Wu7pfXUBz9MAa6zcqk0HW7jAMzjZ8eaYJsfMBrv_5Z8dnBLIJ757tdhh1rk=w1280",
+    ],
+  },
+  {
+    title: "Dynamic Form: Motion and Tension in Structure",
+    description: "Inspired by the mechanics of a bug's pincer, this project explores dynamic motion and structural tension through an abstract form. The composition captures the balance between rigidity and movement, translating the precision of natural mechanisms into an expressive design. I explored how subtle curvature and asymmetry could guide the viewer's eye and create the illusion of motion through form alone.",
+    processDescription: "I learned to render a ribs-and-strings model for the first time, developing a stronger understanding of structure, depth, and spatial continuity through layered linework. This project also advanced my technical precision as I refined my laser-cutting skills to achieve smooth, accurate contours. Working with foam for the first time using a hot wire cutter taught me how to control form through gradual shaping.",
+    images: [
+      "https://lh3.googleusercontent.com/sitesv/AAzXCkcQ8KhEUE6wBH00kczySpU9k-d0Sr2Uny-R2DEZsr-0j827CdCTbsDWxPcwTknCRLz0kegmf7Op1Tn_4tcDmTySf2TqsFCBkfehu3cgWItPA6qfstsS32MlMWenwyKwEUzh0fpiktEP4GLq-iFMm1Ee99-IzOgpCd2i6S3I5Gvw0Sc5FqoVrZC4JX8b9s2UWpo0_YBDv3K_g66HFmnsPh0HfjzrrV0-ihDTnqw=w1280",
+    ],
   },
 ];
 
@@ -172,7 +190,7 @@ const ProjectDetail = () => {
           {isStudioProjects && project.studioProjects && (
             <section className="mb-16">
               <h2 className="font-display text-2xl text-foreground mb-8">Projects</h2>
-              <div className="space-y-8">
+              <div className="space-y-12">
                 {project.studioProjects.map((studioProject, index) => (
                   <div
                     key={index}
@@ -184,6 +202,23 @@ const ProjectDetail = () => {
                     <p className="text-muted-foreground font-body font-light leading-relaxed mb-4">
                       {studioProject.description}
                     </p>
+                    {studioProject.images && studioProject.images.length > 0 && (
+                      <div className="mb-4">
+                        <img
+                          src={studioProject.images[0]}
+                          alt={studioProject.title}
+                          className="w-full max-w-2xl rounded-lg"
+                        />
+                      </div>
+                    )}
+                    {studioProject.processDescription && (
+                      <div className="mb-4">
+                        <h4 className="font-display text-lg text-foreground mb-2">Process</h4>
+                        <p className="text-muted-foreground font-body font-light leading-relaxed">
+                          {studioProject.processDescription}
+                        </p>
+                      </div>
+                    )}
                     {studioProject.processPdf && (
                       <a
                         href={studioProject.processPdf}

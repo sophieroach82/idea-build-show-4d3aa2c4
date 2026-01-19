@@ -17,6 +17,18 @@ const experiences = [
     ],
   },
   {
+    title: "Freelance Graphic Designer",
+    organization: "Self-Employed",
+    period: "2024 – Present",
+    location: "Savannah, GA / Atlanta, GA",
+    description: [
+      "Collaborating with clients to design custom logos and brand identities using Adobe Creative Cloud",
+      "Managing client relationships from initial consultation through final delivery",
+      "Developing visual solutions that balance aesthetic appeal with functional communication",
+      "Reinforcing creative problem-solving skills through diverse project requirements",
+    ],
+  },
+  {
     title: "Vice President, Media Club",
     organization: "St. Vincent's Academy",
     period: "2021 – 2023",

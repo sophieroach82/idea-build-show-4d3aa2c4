@@ -9,20 +9,31 @@ const projects = [
     category: "Industrial Design",
     description: "Product sketches, models, and prototypes from Georgia Tech design studio",
     image: studioProjectsCover,
+    showImage: true,
+  },
+  {
+    id: "graphic-design",
+    title: "Graphic Design",
+    category: "Branding & Visual Identity",
+    description: "Custom logos and brand identities for diverse clients",
+    image: null,
+    showImage: false,
   },
   {
     id: "website-development",
     title: "Website Development",
     category: "UI/UX & Coding",
     description: "CS 1301 project using Streamlit, APIs, and JSON",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop",
+    image: null,
+    showImage: false,
   },
   {
     id: "leadership",
     title: "Panhellenic Council",
     category: "Leadership",
     description: "DEI initiatives and community engagement",
-    image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
+    image: null,
+    showImage: false,
   },
 ];
 
@@ -57,13 +68,15 @@ export const Portfolio = () => {
               className={`group block ${index === 0 ? "md:col-span-2" : ""}`}
             >
               <article className="card-hover bg-background overflow-hidden">
-                <div className={`image-reveal ${index === 0 ? "aspect-[2/1]" : "aspect-[3/2]"}`}>
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
+                {project.showImage && project.image && (
+                  <div className={`image-reveal ${index === 0 ? "aspect-[2/1]" : "aspect-[3/2]"}`}>
+                    <img
+                      src={project.image}
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
                 <div className="p-6 lg:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <div className="space-y-2">

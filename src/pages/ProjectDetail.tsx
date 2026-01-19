@@ -104,6 +104,22 @@ const projectData: Record<string, {
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=800&fit=crop",
     gallery: [],
   },
+  "graphic-design": {
+    title: "Graphic Design",
+    category: "Branding & Visual Identity",
+    description: "Custom logos and brand identities for diverse clients",
+    overview: "As a freelance graphic designer, I collaborate with clients to create custom logos and brand identities that balance aesthetic appeal with functional communication. Working with diverse project requirements has strengthened my creative problem-solving skills and deepened my understanding of visual storytelling across different industries and audiences.",
+    process: [
+      "Conducted initial client consultations to understand brand vision and goals",
+      "Researched industry trends and competitor visual identities",
+      "Developed multiple concept directions through sketching and digital exploration",
+      "Refined selected concepts based on client feedback",
+      "Delivered final assets with comprehensive brand guidelines",
+    ],
+    tools: ["Adobe Illustrator", "Adobe Photoshop", "Adobe InDesign", "Brand Strategy", "Typography"],
+    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=1200&h=800&fit=crop",
+    gallery: [],
+  },
 };
 
 const ProjectDetail = () => {

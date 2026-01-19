@@ -86,10 +86,7 @@ const projectData: Record<string, {
     ],
     tools: ["Python", "Streamlit", "APIs", "JSON", "HTML/CSS"],
     image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=1200&h=800&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=400&fit=crop",
-    ],
+    gallery: [],
   },
   "leadership": {
     title: "Panhellenic Council",
@@ -105,10 +102,7 @@ const projectData: Record<string, {
     ],
     tools: ["Strategic Planning", "Event Coordination", "Community Building", "Public Speaking"],
     image: "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1200&h=800&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=400&fit=crop",
-      "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600&h=400&fit=crop",
-    ],
+    gallery: [],
   },
 };
 

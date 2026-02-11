@@ -26,20 +26,10 @@ const studioProjects: StudioProject[] = [
     ],
   },
   {
-    title: "Spatial Composition: Interaction of Line and Plane",
-    description: "Inspired by the organic form of a flower, this composition explores the relationship between line and plane through curved paper surfaces and flowing wire elements. The design captures the sense of balance and movement found in nature, emphasizing how simple materials can express spatial harmony. My goal was to capture the dynamism and structural integrity found in natural forms while using minimal materials: paper and wire.",
-    processDescription: "I learned to solder wire for the first time, refining precision and control while constructing delicate linear connections. Working with cardstock as a new material, I explored how subtle bends and folds could define planar structure, and by using markers for shading, I developed a deeper understanding of light, shadow, and depth in visual presentation.",
-    images: [
-      "https://lh3.googleusercontent.com/sitesv/AAzXCkdGqbb8DdGEOZqFQzRLMAfj03G0f5tHYYJ6tKKR4UdSFVkz0jGoq-4XCkGb3UYlUZ1f84PCjPpklN01t0c3t1P0QyVTlymtFMZ46SR0QJuvrnc_TNH_CC_OSbaVVYOfcQPnjtBTIAnMM-qmkGnpFPZn7YNql9Ryu_vcHZq08Wu7pfXUBz9MAa6zcqk0HW7jAMzjZ8eaYJsfMBrv_5Z8dnBLIJ757tdhh1rk=w1280",
-    ],
-  },
-  {
-    title: "Dynamic Form: Motion and Tension in Structure",
-    description: "Inspired by the mechanics of a bug's pincer, this project explores dynamic motion and structural tension through an abstract form. The composition captures the balance between rigidity and movement, translating the precision of natural mechanisms into an expressive design. I explored how subtle curvature and asymmetry could guide the viewer's eye and create the illusion of motion through form alone.",
-    processDescription: "I learned to render a ribs-and-strings model for the first time, developing a stronger understanding of structure, depth, and spatial continuity through layered linework. This project also advanced my technical precision as I refined my laser-cutting skills to achieve smooth, accurate contours. Working with foam for the first time using a hot wire cutter taught me how to control form through gradual shaping.",
-    images: [
-      "https://lh3.googleusercontent.com/sitesv/AAzXCkcQ8KhEUE6wBH00kczySpU9k-d0Sr2Uny-R2DEZsr-0j827CdCTbsDWxPcwTknCRLz0kegmf7Op1Tn_4tcDmTySf2TqsFCBkfehu3cgWItPA6qfstsS32MlMWenwyKwEUzh0fpiktEP4GLq-iFMm1Ee99-IzOgpCd2i6S3I5Gvw0Sc5FqoVrZC4JX8b9s2UWpo0_YBDv3K_g66HFmnsPh0HfjzrrV0-ihDTnqw=w1280",
-    ],
+    title: "Air O: Display Shelf",
+    description: "Air O is an air plant display shelf designed to bridge the gap between indoor and outdoor space, allowing nature to be integrated into any room seamlessly and organically. The shelf is a composite shelving unit crafted from acrylic and wire mesh, designed to safely and organically display and protect air plants. This project was also my introduction to 3D printing, which I used to create custom bracket components that connect the acrylic panels to the wire mesh structure.",
+    processDescription: "I began with market research to identify gaps in existing plant display solutions, finding large discrepancies in price, aesthetics, and suitability for plants. Through iterative sketching and concept development, I explored organic curvature and sleek, continuous forms that would enhance the natural beauty of air plants. I designed custom bracket connections using CAD and 3D printed them, learning the full digital-to-physical fabrication workflow. The final design prioritizes shading and airflow through the wire mesh while the acrylic panels provide structural support and visual lightness.",
+    processPdf: "/documents/Air_O_Process_Book.pdf",
   },
 ];
 
@@ -67,7 +57,7 @@ const projectData: Record<string, {
       "Created physical models and prototypes using woodworking, laser cutting, and hand fabrication",
       "Documented the design process through comprehensive process books",
     ],
-    tools: ["Sketching", "CAD Software", "3D Modeling", "Woodworking", "Laser Cutting", "Physical Prototyping"],
+    tools: ["Sketching", "CAD Software", "3D Modeling", "3D Printing", "Woodworking", "Laser Cutting", "Physical Prototyping"],
     image: studioProjectsCover,
     gallery: [],
     studioProjects: studioProjects,

@@ -11,30 +11,6 @@ const projects = [
     image: studioProjectsCover,
     showImage: true,
   },
-  {
-    id: "graphic-design",
-    title: "Graphic Design",
-    category: "Branding & Visual Identity",
-    description: "Custom logos and brand identities for diverse clients",
-    image: null,
-    showImage: false,
-  },
-  {
-    id: "website-development",
-    title: "Website Development",
-    category: "UI/UX & Coding",
-    description: "CS 1301 project using Streamlit, APIs, and JSON",
-    image: null,
-    showImage: false,
-  },
-  {
-    id: "leadership",
-    title: "Panhellenic Council",
-    category: "Leadership",
-    description: "DEI initiatives and community engagement",
-    image: null,
-    showImage: false,
-  },
 ];
 
 export const Portfolio = () => {

@@ -6,7 +6,7 @@ const skillCategories = [
   },
   {
     title: "Technology",
-    skills: ["Adobe Creative Cloud", "Photoshop", "Illustrator", "InDesign", "CAD", "HTML", "Microsoft Suite"],
+    skills: ["Adobe Creative Cloud", "Python", "Fusion 360", "CAD", "HTML", "Microsoft Suite"],
     accent: false,
   },
   {
@@ -16,7 +16,7 @@ const skillCategories = [
   },
   {
     title: "Interests",
-    skills: ["Travel", "Fashion", "Contemporary Art", "Photography", "Design History"],
+    skills: ["Travel", "Fashion", "Running", "Yoga", "Photography"],
     accent: true,
   },
 ];

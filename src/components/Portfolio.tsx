@@ -31,7 +31,7 @@ export const Portfolio = () => {
             </h2>
           </div>
           <p className="text-muted-foreground font-body max-w-md">
-            Explore my work across industrial design, UI/UX, and leadership initiatives.
+            Explore my work across industrial design.
           </p>
         </div>
 

@@ -1,79 +1,28 @@
-import { ArrowDown } from "lucide-react";
-import sophiePortrait from "@/assets/sophie-portrait.png";
+import heroProduct from "@/assets/hero-product.svg";
 
 export const Hero = () => {
-  const scrollToAbout = () => {
-    const element = document.getElementById("about");
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Subtle background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/30" />
-      
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-12 py-32 lg:py-40">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-          {/* Text Content */}
-          <div className="space-y-8 order-2 lg:order-1">
-            <div className="space-y-4">
-              <p className="text-sm uppercase tracking-[0.2em] text-primary font-body fade-in-up stagger-1">
-                Industrial Design • Georgia Tech
-              </p>
-              <h1 className="display-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-foreground fade-in-up stagger-2">
-                Sophie Roach
-              </h1>
-              <p className="text-lg md:text-xl text-muted-foreground font-body font-light leading-relaxed max-w-lg fade-in-up stagger-3">
-                A creative problem solver who bridges Industrial Design with technical proficiency in design software and Adobe Creative Cloud. Driven by user-focused design, I bring attention to detail and a collaborative spirit to every project.
-              </p>
-            </div>
+    <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background">
+      {/* Large product image - dominant, like the reference */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <img
+          src={heroProduct}
+          alt="Design work"
+          className="w-[90%] md:w-[75%] lg:w-[65%] max-h-[80vh] object-contain opacity-90 blur-[1px]"
+          style={{ filter: 'blur(1.5px) saturate(0.9)' }}
+        />
+      </div>
 
-            <div className="flex flex-wrap gap-4 fade-in-up stagger-4">
-              <a
-                href="#portfolio"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("portfolio")?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300"
-              >
-                View Portfolio
-              </a>
-              <a
-                href="#contact"
-                onClick={(e) => {
-                  e.preventDefault();
-                  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
-                }}
-                className="inline-flex items-center px-6 py-3 border border-foreground/20 text-foreground font-body text-sm uppercase tracking-wider hover:bg-foreground hover:text-background transition-all duration-300"
-              >
-                Get in Touch
-              </a>
-            </div>
-          </div>
-
-          {/* Portrait */}
-          <div className="order-1 lg:order-2 flex justify-center lg:justify-end fade-in-up stagger-2">
-            <div className="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-2xl overflow-hidden border-2 border-border shadow-elevated">
-              <img
-                src={sophiePortrait}
-                alt="Sophie Roach - Industrial Design Student"
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-          </div>
+      {/* Bottom content - name and tagline */}
+      <div className="relative z-10 max-w-7xl w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-24">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-end">
+          <h1 className="display-heading text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9] fade-in-up stagger-1">
+            sophie<br />roach
+          </h1>
+          <p className="text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-md fade-in-up stagger-2 lg:pb-2">
+            A creative problem solver who bridges Industrial Design with technical proficiency in design software and Adobe Creative Cloud.
+          </p>
         </div>
-
-        {/* Scroll Indicator */}
-        <button
-          onClick={scrollToAbout}
-          className="absolute bottom-12 left-1/2 -translate-x-1/2 text-muted-foreground hover:text-primary transition-colors duration-300 animate-bounce"
-          aria-label="Scroll to about section"
-        >
-          <ArrowDown size={24} />
-        </button>
       </div>
     </section>
   );

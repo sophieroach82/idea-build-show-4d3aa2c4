@@ -1,25 +1,25 @@
-import heroProduct from "@/assets/hero-product.svg";
+import heroShelf from "@/assets/hero-shelf.jpg";
 
 export const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background">
-      {/* Large product image - dominant, like the reference */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      {/* Large hero product image - top right, cropped and enlarged like reference */}
+      <div className="absolute top-0 right-0 w-[85%] md:w-[75%] lg:w-[70%] h-[75vh]">
         <img
-          src={heroProduct}
-          alt="Design work"
-          className="w-[90%] md:w-[75%] lg:w-[65%] max-h-[80vh] object-contain opacity-90 blur-[1px]"
-          style={{ filter: 'blur(1.5px) saturate(0.9)' }}
+          src={heroShelf}
+          alt="Air O Display Shelf"
+          className="w-full h-full object-cover object-center"
+          style={{ mixBlendMode: 'multiply' }}
         />
       </div>
 
-      {/* Bottom content - name and tagline */}
+      {/* Bottom-left content - name and tagline, all left-aligned */}
       <div className="relative z-10 max-w-7xl w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-24">
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-12 items-end">
-          <h1 className="display-heading text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9] fade-in-up stagger-1">
-            sophie<br />roach
+        <div className="max-w-2xl space-y-6">
+          <h1 className="display-heading text-5xl md:text-7xl lg:text-8xl xl:text-9xl text-foreground leading-[0.9] fade-in-up stagger-1 uppercase tracking-tight">
+            Sophie<br />Roach
           </h1>
-          <p className="text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-md fade-in-up stagger-2 lg:pb-2">
+          <p className="text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-md fade-in-up stagger-2">
             A creative problem solver who bridges Industrial Design with technical proficiency in design software and Adobe Creative Cloud.
           </p>
         </div>

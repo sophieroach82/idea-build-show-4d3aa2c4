@@ -4,11 +4,11 @@ export const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background">
       {/* Large hero product image - top right, cropped and enlarged like reference */}
-      <div className="absolute top-0 right-0 w-[85%] md:w-[75%] lg:w-[70%] h-[75vh]">
+      <div className="absolute -top-12 -right-[20%] w-[100%] md:w-[90%] lg:w-[85%] h-[80vh]">
         <img
           src={heroShelf}
           alt="Air O Display Shelf"
-          className="w-full h-full object-cover object-center"
+          className="w-full h-full object-contain object-right"
         />
       </div>
 

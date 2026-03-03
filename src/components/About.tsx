@@ -16,6 +16,9 @@ export const About = () => {
             <p>
               I'm Sophie Roach, an Industrial Design student at the Georgia Institute of Technology with a passion for thoughtful, human-centered design. My work combines simplicity, usability, and visual storytelling, drawing from experience in both product and graphic design. I aim to explore how composition, aesthetics, and experience shape the way people interact with everyday objects.
             </p>
+            <p>
+              Driven by user-focused design, I bring attention to detail and a collaborative spirit to every project.
+            </p>
           </div>
 
           <div className="pt-8 grid grid-cols-2 gap-8 border-t border-border">
@@ -24,7 +27,7 @@ export const About = () => {
               <p className="text-sm text-muted-foreground uppercase tracking-wide">Class Year</p>
             </div>
             <div className="space-y-2">
-              <p className="text-3xl font-display text-primary">ID</p>
+              <p className="text-3xl font-display text-primary">Industrial Design</p>
               <p className="text-sm text-muted-foreground uppercase tracking-wide">Major</p>
             </div>
           </div>

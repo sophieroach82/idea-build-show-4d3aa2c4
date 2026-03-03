@@ -1,4 +1,4 @@
-import heroShelf from "@/assets/hero-shelf.jpg";
+import heroShelf from "@/assets/hero-shelf.png";
 
 export const Hero = () => {
   return (
@@ -9,7 +9,6 @@ export const Hero = () => {
           src={heroShelf}
           alt="Air O Display Shelf"
           className="w-full h-full object-cover object-center"
-          style={{ mixBlendMode: 'multiply' }}
         />
       </div>
 

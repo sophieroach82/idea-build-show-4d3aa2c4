@@ -18,6 +18,7 @@ const Index = () => {
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
+          filter: 'grayscale(100%)',
         }}
       />
       <div className="relative z-10">

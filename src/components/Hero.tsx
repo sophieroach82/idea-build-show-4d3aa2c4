@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background">
       {/* Large hero product image - top right, cropped and enlarged like reference */}
-      <div className="absolute -top-24 -right-[30%] w-[120%] md:w-[110%] lg:w-[100%] h-[90vh]">
+      <div className="absolute -top-8 -right-[15%] w-[130%] md:w-[120%] lg:w-[110%] h-[95vh]">
         <img
           src={heroShelf}
           alt="Air O Display Shelf"

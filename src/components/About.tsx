@@ -14,10 +14,10 @@ export const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              I'm Sophie Roach, an Industrial Design student at the Georgia Institute of Technology with a passion for thoughtful, human-centered design. My work combines simplicity, usability, and visual storytelling, drawing from experience in both product and graphic design. I aim to explore how composition, aesthetics, and experience shape the way people interact with everyday objects.
+              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products and graphics that balance simplicity with unique form.
             </p>
             <p>
-              Driven by user-focused design, I bring attention to detail and a collaborative spirit to every project.
+              My design approach is shaped by an interdisciplinary lens. My minor in History provides an understanding of constantly evolving societal trends, while my pursuit of a certificate in either Sustainability or Entrepreneurship drives me to create solutions that are both ecologically conscious and market-ready. I aim to explore how aesthetics and experience influence how we interact with objects in our daily lives.
             </p>
           </div>
 

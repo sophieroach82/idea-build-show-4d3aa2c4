@@ -8,7 +8,7 @@
   :root {
     /* Navy & Gold gallery aesthetic */
     --background: 0 0% 100%;
-    --foreground: 220 30% 12%;
+    --foreground: 0 0% 0%;
 
     --card: 210 15% 96%;
     --card-foreground: 220 30% 12%;
@@ -16,9 +16,9 @@
     --popover: 210 20% 98%;
     --popover-foreground: 220 30% 12%;
 
-    /* Navy blue primary */
-    --primary: 220 60% 35%;
-    --primary-foreground: 210 20% 98%;
+    /* Black primary */
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
 
     --secondary: 210 10% 92%;
     --secondary-foreground: 220 30% 20%;
@@ -26,16 +26,16 @@
     --muted: 210 10% 90%;
     --muted-foreground: 220 15% 45%;
 
-    /* Gold accent */
-    --accent: 42 70% 50%;
-    --accent-foreground: 220 30% 12%;
+    /* Black accent */
+    --accent: 0 0% 10%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 20% 98%;
 
     --border: 210 15% 88%;
     --input: 210 15% 88%;
-    --ring: 220 60% 35%;
+    --ring: 0 0% 0%;
 
     --radius: 0.25rem;
 

@@ -29,18 +29,6 @@ const experiences = [
     ],
   },
   {
-    title: "Vice President, Media Club",
-    organization: "St. Vincent's Academy",
-    period: "2021 – 2023",
-    location: "Savannah, GA",
-    description: [
-      "Managed social media platforms to showcase student achievements and school events",
-      "Leveraged data-driven insights to enhance engagement and reach target audiences",
-      "Coordinated with team members to develop content calendars and marketing strategies",
-      "Increased follower engagement through new visual storytelling techniques",
-    ],
-  },
-  {
     title: "Independent Childcare Provider",
     organization: "Self-Employed",
     period: "2020 – 2024",

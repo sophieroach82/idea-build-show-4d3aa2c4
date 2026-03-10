@@ -61,8 +61,16 @@ const Education = () => {
                     <p className="text-foreground font-body">History</p>
                   </div>
                   <div>
+                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">GPA</p>
+                    <p className="text-foreground font-body">3.56</p>
+                  </div>
+                  <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Expected Graduation</p>
                     <p className="text-foreground font-body">Class of 2028</p>
+                  </div>
+                  <div>
+                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Scholarship</p>
+                    <p className="text-foreground font-body">Zell Miller Scholarship Recipient</p>
                   </div>
                 </div>
 
@@ -72,7 +80,7 @@ const Education = () => {
                     <h3 className="font-display text-lg text-foreground">Relevant Coursework</h3>
                   </div>
                   <div className="flex flex-wrap gap-3">
-                    {["Computer Science", "Graphic Design", "Fundamentals of Design Studio"].map((course) => (
+                    {["Computer Science", "Graphic Design", "Fundamentals of Design Studio", "Introduction to Industrial Design"].map((course) => (
                       <span
                         key={course}
                         className="px-4 py-2 text-sm font-body bg-background border border-border text-muted-foreground"

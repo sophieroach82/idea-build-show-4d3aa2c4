@@ -5,39 +5,44 @@ import { useEffect } from "react";
 
 const experiences = [
   {
-    title: "DEI Vice President",
-    organization: "Collegiate Panhellenic Council",
-    period: "October 2025 – Present",
-    location: "Georgia Tech, Atlanta, GA",
-    description: [
-      "Leading initiatives that foster awareness and inclusive practices across Greek life",
-      "Facilitating bi-weekly meetings with chapter delegates to discuss DEI strategies",
-      "Managing inter-chapter communication and collaboration on diversity initiatives",
-      "Developing programming that promotes dialogue and understanding within the community",
-    ],
-  },
-  {
     title: "Freelance Graphic Designer",
     organization: "Self-Employed",
     period: "2024 – Present",
-    location: "Savannah, GA / Atlanta, GA",
+    location: "Atlanta, Georgia",
     description: [
-      "Collaborating with clients to design custom logos and brand identities using Adobe Creative Cloud",
-      "Managing client relationships from initial consultation through final delivery",
-      "Developing visual solutions that balance aesthetic appeal with functional communication",
-      "Reinforcing creative problem-solving skills through diverse project requirements",
+      "Collaborated with clients to design cohesive and compelling logos using Adobe Creative Cloud",
+      "Reinforced creative problem solving and management abilities through independent client work",
     ],
   },
   {
-    title: "Independent Childcare Provider",
+    title: "Diversity, Equity, and Inclusion (DEI) Vice President",
+    organization: "Collegiate Panhellenic Council",
+    period: "October 2025 – Present",
+    location: "Atlanta, GA",
+    description: [
+      "Lead DEI initiatives and forum discussions to facilitate awareness and meaningful dialogue surrounding community values",
+      "Hold bi-weekly meetings with chapter delegates discussing how to better foster inclusive practices among all chapters",
+      "Strengthened communication, leadership, and organizational skills managing an inter-chapter network",
+    ],
+  },
+  {
+    title: "Independent Childcare Provider for Local Families",
     organization: "Self-Employed",
     period: "2020 – 2024",
-    location: "Savannah, GA",
+    location: "Savannah, Georgia",
     description: [
-      "Developed strong time management and organizational skills",
-      "Built excellent interpersonal communication abilities with families",
-      "Demonstrated responsibility, reliability, and adaptability across various situations",
-      "Maintained consistent, professional relationships with multiple families",
+      "Managed multiple children's daily routines, meals, and activities with consistency and care",
+      "Developed strong time management, efficient multitasking, and interpersonal communications skills",
+    ],
+  },
+  {
+    title: "Media Club Vice President",
+    organization: "St. Vincent's Academy",
+    period: "2021 – 2023",
+    location: "Savannah, Georgia",
+    description: [
+      "Planned weekly meetings and managed a social media account to promote school events and showcase student work",
+      "Combined data-driven insight and design to enhance engagement across school social media platforms using Adobe Creative Cloud",
     ],
   },
 ];

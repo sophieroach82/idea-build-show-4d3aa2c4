@@ -138,8 +138,9 @@ const Education = () => {
                   <h3 className="font-display text-lg text-foreground">Academic Honors</h3>
                   <ul className="space-y-2">
                     {[
-                      "STAR Student (Highest SAT)",
-                      "GA Certificate of Merit (Top 5%)",
+                      "STAR Student (Highest SAT in Class)",
+                      "GA Certificate of Merit (Top 5% of Class)",
+                      "8x Excellence Honors Semester",
                     ].map((honor) => (
                       <li key={honor} className="flex items-center gap-2 text-muted-foreground font-body">
                         <Award className="w-4 h-4 text-primary flex-shrink-0" />

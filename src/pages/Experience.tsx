@@ -5,44 +5,34 @@ import { useEffect } from "react";
 
 const experiences = [
   {
-    title: "Freelance Graphic Designer",
-    organization: "Self-Employed",
-    period: "2024 – Present",
-    location: "Atlanta, Georgia",
-    description: [
-      "Collaborated with clients to design cohesive and compelling logos using Adobe Creative Cloud",
-      "Reinforced creative problem solving and management abilities through independent client work",
-    ],
-  },
-  {
-    title: "Diversity, Equity, and Inclusion (DEI) Vice President",
+    title: "Diversity, Equity, & Inclusion (DEI) Vice President",
     organization: "Collegiate Panhellenic Council",
     period: "October 2025 – Present",
     location: "Atlanta, GA",
     description: [
-      "Lead DEI initiatives and forum discussions to facilitate awareness and meaningful dialogue surrounding community values",
+      "Lead DEI initiatives and discussions to facilitate awareness and meaningful dialogue surrounding progressing community values",
       "Hold bi-weekly meetings with chapter delegates discussing how to better foster inclusive practices among all chapters",
       "Strengthened communication, leadership, and organizational skills managing an inter-chapter network",
     ],
   },
   {
-    title: "Independent Childcare Provider for Local Families",
+    title: "Freelance Graphic Designer",
     organization: "Self-Employed",
-    period: "2020 – 2024",
-    location: "Savannah, Georgia",
+    period: "2024 – Present",
+    location: "Atlanta, GA",
     description: [
-      "Managed multiple children's daily routines, meals, and activities with consistency and care",
-      "Developed strong time management, efficient multitasking, and interpersonal communications skills",
+      "Collaborated with clients to design cohesive and compelling logos using the Adobe Creative Suite",
+      "Reinforced creative problem solving and management abilities through independent client work",
     ],
   },
   {
-    title: "Media Club Vice President",
-    organization: "St. Vincent's Academy",
-    period: "2021 – 2023",
-    location: "Savannah, Georgia",
+    title: "Independent Childcare Provider",
+    organization: "Self-Employed",
+    period: "2020 – Present",
+    location: "Savannah & Atlanta, GA",
     description: [
-      "Planned weekly meetings and managed a social media account to promote school events and showcase student work",
-      "Combined data-driven insight and design to enhance engagement across school social media platforms using Adobe Creative Cloud",
+      "Managed many children's daily routines, meals, and activities with consistency and care",
+      "Developed strong time-management, efficient multitasking, and interpersonal communication skills",
     ],
   },
 ];

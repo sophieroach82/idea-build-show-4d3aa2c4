@@ -6,22 +6,22 @@ const skillCategories = [
   },
   {
     title: "Technology",
-    skills: ["Adobe Creative Cloud (Photoshop, Illustrator, InDesign)", "Python", "HTML", "Microsoft Suite (Word, Excel, etc.)"],
+    skills: ["Adobe Creative Suite (InDesign, Premiere Pro, Illustrator)", "Python", "HTML", "Microsoft Suite", "Fusion360"],
     accent: false,
   },
   {
     title: "Activities",
-    skills: ["Alpha Delta Pi (Zeta Omicron)", "Industrial Designers Society of America"],
+    skills: ["Alpha Delta Pi (Zeta Omicron)", "Industrial Designers Society of America (IDSA)"],
     accent: false,
   },
   {
     title: "Volunteer",
-    skills: ["Leukemia and Lymphoma Society", "Prayer and Action", "Loop It Up", "Healthy Kids Running"],
+    skills: ["Leukemia and Lymphoma Society", "Loop It Up", "Healthy Kids Running"],
     accent: true,
   },
   {
     title: "Interests",
-    skills: ["Travel", "Fashion", "Contemporary Art", "Photography", "Fitness"],
+    skills: ["Travel", "Fashion", "Contemporary Art", "Yoga", "Running: Half Marathon Finisher"],
     accent: false,
   },
 ];

@@ -156,14 +156,14 @@ const Education = () => {
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
                     <p className="text-primary font-body font-medium mb-2">Track & Field</p>
-                    <p className="text-muted-foreground font-body text-sm">
-                      Captain • MVP • All-State Honors
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-primary font-body font-medium mb-2">Cross Country</p>
-                    <p className="text-muted-foreground font-body text-sm">
-                      Captain • MVP • State Qualifier
+                     <p className="text-muted-foreground font-body text-sm">
+                       Captain • MVP • All-Region & All-State Honors • 3x State Qualifier
+                     </p>
+                   </div>
+                   <div>
+                     <p className="text-primary font-body font-medium mb-2">Cross Country</p>
+                     <p className="text-muted-foreground font-body text-sm">
+                       Captain • MVP • All-Region 1st Team • State Qualifier
                     </p>
                   </div>
                 </div>

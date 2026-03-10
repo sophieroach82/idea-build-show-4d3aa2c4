@@ -125,6 +125,10 @@ const Education = () => {
                     <p className="text-foreground font-body">3 out of 79</p>
                   </div>
                   <div>
+                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">AP Courses</p>
+                    <p className="text-foreground font-body">8 AP Courses</p>
+                  </div>
+                  <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">SAT Score</p>
                     <p className="text-foreground font-body">1420</p>
                   </div>

@@ -61,8 +61,8 @@ const Education = () => {
                     <p className="text-foreground font-body">History</p>
                   </div>
                   <div>
-                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">GPA</p>
-                    <p className="text-foreground font-body">3.56</p>
+                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Planned Certificate</p>
+                    <p className="text-foreground font-body">Entrepreneurship</p>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Expected Graduation</p>

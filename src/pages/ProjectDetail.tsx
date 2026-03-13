@@ -15,7 +15,7 @@ const studioProjects: StudioProject[] = [
   {
     title: "TAILOR-D: Portable Step Stool",
     description: "TAILOR-D is a multifunctional portable step stool designed for tailors, where a railing, step, or seat is always readily accessible. Built entirely from a single 2' x 4' sheet of plywood, the project emphasizes sustainability through material consciousness and constraint.",
-    processDescription: "Working as a team of two, we designed and built a self-supporting portable platform with non-adjustable parts, resolving design, human factors, and structure. Through multiple layers of prototyping, including scale models and full-size joint-specific fragments, we refined the form, joinery, and finish to create a trustworthy product with a clear personality.",
+    processDescription: "Working as a team of two, we designed and built a self-supporting portable platform with non-adjustable parts, resolving design, human factors, and structure. Through multiple layers of prototyping, including scale models and full-size joint-specific fragments, we refined the form, joinery, and finish.",
     processPdf: "/documents/TAILOR-D_Process_Book.pdf",
   },
   {

@@ -13,6 +13,12 @@ interface StudioProject {
 
 const studioProjects: StudioProject[] = [
   {
+    title: "TAILOR-D: Portable Step Stool",
+    description: "TAILOR-D is a multifunctional portable step stool designed for tailors, where a railing, step, or seat is always readily accessible. Built entirely from a single 2' x 4' sheet of plywood, the project emphasizes sustainability through material consciousness and constraint.",
+    processDescription: "Working as a team of two, we designed and built a self-supporting portable platform with non-adjustable parts, resolving design, human factors, and structure. Through multiple layers of prototyping, including scale models and full-size joint-specific fragments, we refined the form, joinery, and finish to create a trustworthy product with a clear personality.",
+    processPdf: "/documents/TAILOR-D_Process_Book.pdf",
+  },
+  {
     title: "Air O: Display Shelf",
     description: "Air O is an air plant display shelf designed to bridge the gap between indoor and outdoor space, allowing nature to be integrated into any room seamlessly and organically. The shelf is a composite shelving unit crafted from acrylic and wire mesh, designed to display and protect air plants.",
     processDescription: "I began with market research to identify gaps in existing plant display solutions, finding large discrepancies in price, aesthetics, and suitability for plants. Through iterative sketching and concept development, I explored organic curvature and sleek, continuous forms that would enhance the natural beauty of air plants. I designed custom bracket connections in Fusion 360 and 3D printed them to hold the custom shelf, learning the full digital-to-physical fabrication workflow. The final design prioritizes visual lightness and airflow through the wire mesh while the acrylic panels provide structural support and shading.",
@@ -22,12 +28,6 @@ const studioProjects: StudioProject[] = [
     title: "Pairs: Salt & Pepper Shakers",
     description: "A sculptural exploration of form and function, these red salt and pepper shakers were designed to complement each other while maintaining distinct identities. The project focused on material integrity and the relationship between paired objects.",
     processPdf: "/documents/Pairs_Process_Book_Final.pdf",
-  },
-  {
-    title: "TAILOR-D: Portable Step Stool",
-    description: "TAILOR-D is a multifunctional portable step stool designed for tailors, where a railing, step, or seat is always readily accessible. Built entirely from a single 2' x 4' sheet of plywood, the project emphasizes sustainability through material consciousness and constraint.",
-    processDescription: "Working as a team of two, we designed and built a self-supporting portable platform with non-adjustable parts, resolving design, human factors, and structure. Through multiple layers of prototyping—scale models and full-size joint-specific fragments—we refined the form, joinery, and finish to create a trustworthy, personality-driven product.",
-    processPdf: "/documents/TAILOR-D_Process_Book.pdf",
   },
 ];
 

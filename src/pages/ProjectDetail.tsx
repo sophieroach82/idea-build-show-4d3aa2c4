@@ -24,12 +24,10 @@ const studioProjects: StudioProject[] = [
     processPdf: "/documents/Pairs_Process_Book_Final.pdf",
   },
   {
-    title: "Wooden Mallet: Exploration of Material Integrity",
-    description: "For this project, I designed and built a wooden mallet with a detachable handle, crafted from a single slab of hardwood. My inspiration came from the idea of simplicity in form, in turn to expose and highlight the flaws of the raw material, which are the integral factor in the composition's visual appeal. I wanted the design to feel purposeful, where every curve and connection reflected both function and craft.",
-    processDescription: "I created my first shop orthographic drawing to guide fabrication, then used laser cutting to translate digital precision into physical components. By calculating the taper angle of the detachable handle, I combined design intuition with mathematical accuracy, bridging technical drawing and hands-on making. This project deepened my appreciation for craftsmanship, material honesty, and the integration of design thinking into physical making.",
-    images: [
-      "https://lh3.googleusercontent.com/sitesv/AAzXCkcTEfIHc3Ph9MiJFKzyQHUyZj5taHUiNk80iwmP6UInOa3r9VKViukxv7gLiiGF7yw1pvXkBtdzrEb88gEJw6rdI4xHfNaw0Snh3rjYM6FN8tbeQD9D4rin1MCud3Ckav23P120K7-N9M3JQSdO1Tw7VsJYe_la13HiE0xCh4qTInXKJyvKIevYMnnJS8OEdrbEdppNw4ztVT7sjopzSj6wLp8P83EPcdAj6aQ=w1280",
-    ],
+    title: "TAILOR-D: Portable Step Stool",
+    description: "TAILOR-D is a multifunctional portable step stool designed for tailors, where a railing, step, or seat is always readily accessible. Built entirely from a single 2' x 4' sheet of plywood, the project emphasizes sustainability through material consciousness and constraint.",
+    processDescription: "Working as a team of two, we designed and built a self-supporting portable platform with non-adjustable parts, resolving design, human factors, and structure. Through multiple layers of prototyping—scale models and full-size joint-specific fragments—we refined the form, joinery, and finish to create a trustworthy, personality-driven product.",
+    processPdf: "/documents/TAILOR-D_Process_Book.pdf",
   },
 ];
 

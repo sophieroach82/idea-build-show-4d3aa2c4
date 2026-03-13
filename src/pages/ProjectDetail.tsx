@@ -21,7 +21,7 @@ const studioProjects: StudioProject[] = [
   {
     title: "Air O: Display Shelf",
     description: "Air O is an air plant display shelf designed to bridge the gap between indoor and outdoor space, allowing nature to be integrated into any room seamlessly and organically. The shelf is a composite shelving unit crafted from acrylic and wire mesh, designed to display and protect air plants.",
-    processDescription: "I began with market research to identify gaps in existing plant display solutions, finding large discrepancies in price, aesthetics, and suitability for plants. Through iterative sketching and concept development, I explored organic curvature and sleek, continuous forms that would enhance the natural beauty of air plants. I designed custom bracket connections in Fusion 360 and 3D printed them to hold the custom shelf, learning the full digital-to-physical fabrication workflow. The final design prioritizes visual lightness and airflow through the wire mesh while the acrylic panels provide structural support and shading.",
+    processDescription: "Through iterative sketching and concept development, I explored organic forms that enhance the natural beauty of air plants. I designed custom bracket connections in Fusion 360 and 3D printed them, learning the full digital-to-physical fabrication workflow. The final design prioritizes visual lightness and airflow through the wire mesh while acrylic panels provide structural support and shading.",
     processPdf: "/documents/Air_O_Process_Book.pdf",
   },
   {

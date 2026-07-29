@@ -14,14 +14,14 @@ export const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products and graphics that balance simplicity with unique form.
+              I'm Sophie Roach, an Industrial Design student at Georgia Tech focused on creating thoughtful, human-centered products that balance simplicity with distinctive form.
             </p>
             <p>
-              My design approach is shaped by an interdisciplinary lens. My minor in History provides an understanding of constantly evolving societal trends, while my pursuit of a certificate in either Sustainability or Entrepreneurship drives me to create solutions that are both ecologically conscious and market-ready. I aim to explore how aesthetics and experience influence how we interact with objects in our daily lives.
+              My approach is shaped by an interdisciplinary lens. A minor in History grounds my work in constantly evolving societal trends, while a planned certificate in Sustainability or Entrepreneurship pushes me toward solutions that are both ecologically conscious and market-ready. Recent work at Brasseler USA, documenting Nordent medical devices in SolidWorks, has sharpened how I move between physical prototypes and engineering-grade precision.
             </p>
           </div>
 
-          <div className="pt-8 grid grid-cols-2 gap-8 border-t border-border">
+          <div className="pt-8 grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-border">
             <div className="space-y-2">
               <p className="text-3xl font-display text-primary">2028</p>
               <p className="text-sm text-muted-foreground uppercase tracking-wide">Class Year</p>
@@ -29,6 +29,10 @@ export const About = () => {
             <div className="space-y-2">
               <p className="text-3xl font-display text-primary">Industrial Design</p>
               <p className="text-sm text-muted-foreground uppercase tracking-wide">Major</p>
+            </div>
+            <div className="space-y-2">
+              <p className="text-3xl font-display text-primary">Brasseler USA</p>
+              <p className="text-sm text-muted-foreground uppercase tracking-wide">Engineering Intern '26</p>
             </div>
           </div>
         </div>

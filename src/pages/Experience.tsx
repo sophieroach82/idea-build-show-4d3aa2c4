@@ -5,12 +5,23 @@ import { useEffect } from "react";
 
 const experiences = [
   {
+    title: "Engineering Intern — Product Development",
+    organization: "Brasseler USA",
+    period: "May 2026 – July 2026",
+    location: "Savannah, GA",
+    description: [
+      "Produced Design History File documentation for hundreds of Nordent products by reverse-engineering physical devices using Keyence, RAM, and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings",
+      "Contributed to DHF compliance documentation for Nordent scaler hardened-point tips by defining user requirements and translating them into a traceability matrix",
+      "Analyzed production data, cycle times, and machine run times for ~50 cylindrical parts across four families (quick connect drills, twist drills, burs, and pins) while shadowing operators to build a capacity model",
+    ],
+  },
+  {
     title: "Diversity, Equity, & Inclusion (DEI) Vice President",
     organization: "Collegiate Panhellenic Council",
     period: "October 2025 – Present",
     location: "Atlanta, GA",
     description: [
-      "Lead DEI initiatives and discussions to facilitate awareness and meaningful dialogue surrounding progressing community values",
+      "Lead DEI initiatives and discussions across eight chapters to facilitate awareness and meaningful dialogue surrounding progressing community values",
       "Hold bi-weekly meetings with chapter delegates discussing how to better foster inclusive practices among all chapters",
       "Strengthened communication, leadership, and organizational skills managing an inter-chapter network",
     ],
@@ -23,16 +34,6 @@ const experiences = [
     description: [
       "Collaborated with clients to design cohesive and compelling logos using the Adobe Creative Suite",
       "Reinforced creative problem solving and management abilities through independent client work",
-    ],
-  },
-  {
-    title: "Independent Childcare Provider",
-    organization: "Self-Employed",
-    period: "2020 – Present",
-    location: "Savannah & Atlanta, GA",
-    description: [
-      "Managed many children's daily routines, meals, and activities with consistency and care",
-      "Developed strong time-management, efficient multitasking, and interpersonal communication skills",
     ],
   },
 ];

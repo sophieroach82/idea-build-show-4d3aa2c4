@@ -1,17 +1,26 @@
 import { Link, useParams } from "react-router-dom";
-import { ArrowLeft, FileText, ExternalLink } from "lucide-react";
+import { ArrowLeft, FileText } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import studioProjectsCover from "@/assets/studio-projects-cover.jpeg";
+import naturligCover from "@/assets/naturlig-cover.jpg.asset.json";
+import naturligPdf from "@/assets/naturlig-process-book.pdf.asset.json";
 
 interface StudioProject {
   title: string;
   description: string;
   processDescription?: string;
   processPdf?: string;
-  images?: string[];
+  cover?: string;
 }
 
 const studioProjects: StudioProject[] = [
+  {
+    title: "Naturlig: Sustainable Footwear",
+    description: "Naturlig is a handmade sandal exploring the intersection of everyday comfort and natural, organic style. Constructed from felt, suede, and a layered corrugated cardboard sole, the shoe reimagines what a stylish, sustainable clog can be.",
+    processDescription: "The project began with market research across ten platform and clog styles, revealing an opportunity to bring color, decoration, and functional uniqueness back into a neutral market. From there I moved into material exploration with felt and wood, digital foot scanning, and a stacked cardboard model of the foot. The final form uses a laser-cut living-hinge sole, running-stitched felt uppers, a suede toe cap, and an adjustable ankle strap.",
+    processPdf: naturligPdf.url,
+    cover: naturligCover.url,
+  },
   {
     title: "TAILOR-D: Portable Step Stool",
     description: "TAILOR-D is a multifunctional portable step stool designed for tailors, where a railing, step, or seat is always readily accessible. Built entirely from a single 2' x 4' sheet of plywood, the project emphasizes sustainability through material consciousness and constraint.",
@@ -20,7 +29,7 @@ const studioProjects: StudioProject[] = [
   },
   {
     title: "Air O: Display Shelf",
-    description: "Air O is an air plant display shelf designed to bridge the gap between indoor and outdoor space, allowing nature to be integrated into any room seamlessly and organically. The shelf is a composite shelving unit crafted from acrylic and wire mesh, designed to display and protect air plants.",
+    description: "Air O is an air plant display shelf designed to bridge indoor and outdoor space, letting nature integrate into any room. The composite shelving unit is crafted from acrylic and wire mesh to display and protect air plants.",
     processDescription: "Through iterative sketching and concept development, I explored organic forms that enhance the natural beauty of air plants. I designed custom bracket connections in Fusion 360 and 3D printed them, learning the full digital-to-physical fabrication workflow. The final design prioritizes visual lightness and airflow through the wire mesh while acrylic panels provide structural support and shading.",
     processPdf: "/documents/Air_O_Process_Book.pdf",
   },
@@ -200,12 +209,12 @@ const ProjectDetail = () => {
                     <p className="text-muted-foreground font-body font-light leading-relaxed mb-4">
                       {studioProject.description}
                     </p>
-                    {studioProject.images && studioProject.images.length > 0 && (
-                      <div className="mb-4">
+                    {studioProject.cover && (
+                      <div className="mb-6 overflow-hidden rounded-xl">
                         <img
-                          src={studioProject.images[0]}
+                          src={studioProject.cover}
                           alt={studioProject.title}
-                          className="w-full max-w-2xl rounded-lg"
+                          className="w-full max-w-2xl object-cover"
                         />
                       </div>
                     )}

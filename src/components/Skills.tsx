@@ -1,12 +1,12 @@
 const skillCategories = [
   {
     title: "Skills",
-    skills: ["Concept Development", "Collaboration", "Time Management", "Sketching", "Prototyping and Modeling"],
+    skills: ["Concept Development", "Collaboration", "Sketching", "Physical Prototyping", "3D Modeling", "Design Control"],
     accent: true,
   },
   {
     title: "Technology",
-    skills: ["Adobe Creative Suite (InDesign, Premiere Pro, Illustrator)", "Python", "HTML", "Microsoft Suite", "Fusion360"],
+    skills: ["Adobe Creative Suite", "SolidWorks", "Fusion 360", "Python", "HTML", "Microsoft Suite"],
     accent: false,
   },
   {
@@ -15,14 +15,9 @@ const skillCategories = [
     accent: false,
   },
   {
-    title: "Volunteer",
-    skills: ["Leukemia and Lymphoma Society", "Loop It Up", "Healthy Kids Running"],
-    accent: true,
-  },
-  {
     title: "Interests",
-    skills: ["Travel", "Fashion", "Contemporary Art", "Yoga", "Running: Half Marathon Finisher"],
-    accent: false,
+    skills: ["Travel", "Fashion", "Yoga", "Running: Half Marathon Finisher"],
+    accent: true,
   },
 ];
 

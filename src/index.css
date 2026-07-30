@@ -142,7 +142,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-400 rounded-xl border border-border/70 hover:border-foreground/20 hover:-translate-y-0.5;
+    @apply transition-all duration-300 rounded-xl border border-border/70 hover:border-foreground/20 hover:-translate-y-0.5;
     box-shadow: var(--shadow-soft);
   }
 

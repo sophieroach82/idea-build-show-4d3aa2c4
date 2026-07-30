@@ -37,14 +37,14 @@
     --input: 210 15% 88%;
     --ring: 0 0% 0%;
 
-    --radius: 0.75rem;
+    --radius: 0.5rem;
 
     /* Custom tokens */
-    --hero-gradient: radial-gradient(ellipse at top right, hsl(210 30% 96%) 0%, hsl(0 0% 100%) 60%);
+    --hero-gradient: radial-gradient(ellipse at top right, hsl(210 20% 97%) 0%, hsl(0 0% 100%) 65%);
     --text-display: 'Inter Tight', 'Inter', sans-serif;
     --text-body: 'Inter', sans-serif;
-    --shadow-soft: 0 1px 2px hsl(220 30% 12% / 0.04), 0 8px 24px -8px hsl(220 30% 12% / 0.08);
-    --shadow-elevated: 0 4px 12px -2px hsl(220 30% 12% / 0.08), 0 24px 60px -16px hsl(220 30% 12% / 0.18);
+    --shadow-soft: 0 1px 2px hsl(220 20% 10% / 0.03);
+    --shadow-elevated: 0 2px 8px -2px hsl(220 20% 10% / 0.06), 0 16px 40px -20px hsl(220 20% 10% / 0.12);
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 210 20% 98%;
@@ -142,7 +142,7 @@
   }
 
   .card-hover {
-    @apply transition-all duration-500 rounded-2xl border border-border/60 hover:border-primary/30 hover:-translate-y-1;
+    @apply transition-all duration-400 rounded-xl border border-border/70 hover:border-foreground/20 hover:-translate-y-0.5;
     box-shadow: var(--shadow-soft);
   }
 
@@ -151,7 +151,7 @@
   }
 
   .image-reveal {
-    @apply overflow-hidden rounded-2xl;
+    @apply overflow-hidden rounded-xl;
   }
 
   .image-reveal img {

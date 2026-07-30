@@ -2,7 +2,6 @@ import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, FileText } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import studioProjectsCover from "@/assets/studio-projects-cover.jpeg";
-import naturligCover from "@/assets/naturlig-cover.jpg.asset.json";
 import naturligPdf from "@/assets/naturlig-process-book.pdf.asset.json";
 
 interface StudioProject {
@@ -19,7 +18,6 @@ const studioProjects: StudioProject[] = [
     description: "Naturlig is a handmade sandal exploring the intersection of everyday comfort and natural, organic style. Constructed from felt, suede, and a layered corrugated cardboard sole, the shoe reimagines what a stylish, sustainable clog can be.",
     processDescription: "The project began with market research across ten platform and clog styles, revealing an opportunity to bring color, decoration, and functional uniqueness back into a neutral market. From there I moved into material exploration with felt and wood, digital foot scanning, and a stacked cardboard model of the foot. The final form uses a laser-cut living-hinge sole, running-stitched felt uppers, a suede toe cap, and an adjustable ankle strap.",
     processPdf: naturligPdf.url,
-    cover: naturligCover.url,
   },
   {
     title: "TAILOR-D: Portable Step Stool",

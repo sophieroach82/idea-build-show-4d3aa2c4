@@ -14,13 +14,13 @@ export const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products and graphics that balance simplicity with unique form.
+              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products that balance simplicity with intentional details.
             </p>
             <p>
-              My design approach is shaped by an interdisciplinary lens. My minor in History provides an understanding of constantly evolving societal trends, while my pursuit of a certificate in either Sustainability or Entrepreneurship drives me to create solutions that are both ecologically conscious and market-ready. I aim to explore how aesthetics and experience influence how we interact with objects in our daily lives.
+              My design approach is shaped by an interdisciplinary lens. My minor in History grounds me in how societal trends evolve, while my pursuit of a Sustainability certificate pushes me to design products that make everyday life easier without asking the planet to pay for it. I want the objects people reach for most to feel effortless, considered, and responsible in the materials and systems behind them.
             </p>
             <p>
-              Most recently, I worked as an Engineering Intern in Product Development at Brasseler USA, documenting Nordent medical devices in SolidWorks.
+              Most recently, I worked as an Engineering Intern in Product Development at Brasseler USA. I reverse-engineered hundreds of Nordent dental instruments using Keyence and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings for Design History File documentation. I also defined user requirements and built a traceability matrix for scaler hardened-point tips, and analyzed production and cycle time data across four part families to develop a manufacturing capacity model.
             </p>
           </div>
 

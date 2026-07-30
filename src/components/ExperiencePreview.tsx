@@ -14,7 +14,7 @@ export const ExperiencePreview = () => {
               Experience & Leadership
             </h2>
             <p className="text-muted-foreground font-body max-w-md">
-              From freelance design to DEI leadership, explore my professional journey and the skills I've developed along the way.
+              From freelance design to DEI leadership and my product development internship at Brasseler USA.
             </p>
           </div>
           <Link

@@ -22,7 +22,7 @@ export const Hero = () => {
             Sophie<br />Roach
           </h1>
           <p className="text-base md:text-lg text-muted-foreground font-body font-light leading-relaxed max-w-md fade-in-up stagger-2">
-            A creative problem solver bridging Industrial Design with engineering rigor — from felt-and-cardboard prototypes to SolidWorks documentation for medical devices.
+            Industrial Design student at Georgia Tech creating thoughtful, human-centered products and graphics.
           </p>
         </div>
       </div>

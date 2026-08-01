@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background" style={{ backgroundImage: 'var(--hero-gradient)' }}>
       {/* Large hero product image - top right */}
-      <div className="absolute top-0 right-0 md:right-[4%] h-[70vh] md:h-[92vh] w-[55%] md:w-[45%] pointer-events-none">
+      <div className="absolute top-0 right-0 md:right-[2%] h-[80vh] md:h-[105vh] w-[70%] md:w-[58%] pointer-events-none">
         <img
           src={heroStool}
           alt="TAILOR-D portable plywood step stool"

@@ -2,9 +2,9 @@ import heroStool from "@/assets/hero-stool.png";
 
 export const Hero = () => {
   return (
-    <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background" style={{ backgroundImage: 'var(--hero-gradient)' }}>
-      {/* Large hero product image - top right */}
-      <div className="absolute top-0 right-0 md:right-[2%] h-[80vh] md:h-[105vh] w-[70%] md:w-[58%] pointer-events-none">
+    <section className="min-h-screen relative flex flex-col justify-end bg-background" style={{ backgroundImage: 'var(--hero-gradient)' }}>
+      {/* Large hero product image - top right, extending into about section */}
+      <div className="absolute -top-8 md:-top-16 right-[-10%] md:right-[-5%] h-[110vh] md:h-[170vh] w-[85%] md:w-[72%] pointer-events-none">
         <img
           src={heroStool}
           alt="TAILOR-D portable plywood step stool"

@@ -17,11 +17,12 @@ export const About = () => {
               I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products that balance simplicity with intentional details.
             </p>
             <p>
-              My design approach is shaped by an interdisciplinary lens. My minor in History grounds me in how societal trends evolve, while my pursuit of a Sustainability certificate pushes me to design products that make everyday life easier without asking the planet to pay for it. I want the objects people reach for most to feel effortless, considered, and responsible in the materials and systems behind them.
+              I am pursuing a Sustainability certificate because I want the things people use every day to work better without costing the planet more. Good design should make life easier and leave less behind.
             </p>
             <p>
-              Most recently, I worked as an Engineering Intern in Product Development at Brasseler USA. I reverse-engineered hundreds of Nordent dental instruments using Keyence and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings for Design History File documentation. I also defined user requirements and built a traceability matrix for scaler hardened-point tips, and analyzed production and cycle time data across four part families to develop a manufacturing capacity model.
+              Most recently, I worked as an Engineering Intern in Product Development at Brasseler USA. I reverse engineered hundreds of Nordent dental instruments by creating SolidWorks part models and engineering drawings for Design History File documentation, using Keyence and toolmaker gauges, Artec 3D scanning, and bending macros. I also defined user requirements and built a traceability matrix for scaler hardened-point tips, and analyzed production and cycle time data across four part families to develop a manufacturing capacity model.
             </p>
+
           </div>
 
           <div className="pt-8 grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-border">

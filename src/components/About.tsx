@@ -14,15 +14,11 @@ export const About = () => {
 
           <div className="space-y-6 text-lg text-muted-foreground font-body font-light leading-relaxed">
             <p>
-              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I focus on creating thoughtful, human-centered products that balance simplicity with intentional details.
+              I'm Sophie Roach, an Industrial Design student at Georgia Tech. I design products that look simple but feel intentional; every part has a use, meaning, or justification behind it. Interning at Brasseler USA, modeling dental and surgical instrumentation, gave me time on the manufacturing floor watching how tolerances and features get added to a part. That experience shaped how I design—keep things simple, so that when a machine has to go out of its way to add features, it's intentional.
             </p>
             <p>
-              I am pursuing a Sustainability certificate because I want the things people use every day to work better without costing the planet more. Good design should make life easier and leave less behind.
+              I am also pursuing a certificate in sustainability, because I see unjustified parts and features as a direct source of material waste. Simplicity isn't just an aesthetic choice; it's as much about the product's footprint as it is form.
             </p>
-            <p>
-              Most recently, I worked as an Engineering Intern in Product Development at Brasseler USA. I reverse engineered hundreds of Nordent dental instruments by creating SolidWorks part models and engineering drawings for Design History File documentation, using Keyence and toolmaker gauges, Artec 3D scanning, and bending macros. I also defined user requirements and built a traceability matrix for scaler hardened-point tips, and analyzed production and cycle time data across four part families to develop a manufacturing capacity model.
-            </p>
-
           </div>
 
           <div className="pt-8 grid grid-cols-2 md:grid-cols-3 gap-8 border-t border-border">

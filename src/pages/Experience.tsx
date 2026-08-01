@@ -10,8 +10,8 @@ const experiences = [
     period: "May 2026 – July 2026",
     location: "Savannah, GA",
     description: [
-      "Produced Design History File documentation for hundreds of Nordent products by reverse-engineering physical devices using Keyence, RAM, and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings",
-      "Contributed to DHF compliance documentation for Nordent scaler hardened-point tips by defining user requirements and translating them into a traceability matrix",
+      "Produced Device Medical Record documentation for hundreds of Nordent products by reverse-engineering physical devices using Keyence, RAM, and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings",
+      "Contributed to DMR compliance documentation for Nordent scaler hardened-point tips by defining user requirements and translating them into a traceability matrix",
       "Analyzed production data, cycle times, and machine run times for ~50 cylindrical parts across four families (quick connect drills, twist drills, burs, and pins) while shadowing operators to build a capacity model",
     ],
   },

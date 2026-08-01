@@ -1,16 +1,17 @@
-import heroShelf from "@/assets/hero-shelf.png";
+import heroStool from "@/assets/hero-stool.png";
 
 export const Hero = () => {
   return (
     <section className="min-h-screen relative overflow-hidden flex flex-col justify-end bg-background" style={{ backgroundImage: 'var(--hero-gradient)' }}>
-      {/* Large hero product image - top right, cropped and enlarged like reference */}
-      <div className="absolute -top-8 -right-[25%] w-[145%] md:w-[135%] lg:w-[125%] h-[100vh]">
+      {/* Large hero product image - top right */}
+      <div className="absolute top-0 right-0 md:right-[4%] h-[70vh] md:h-[92vh] w-[55%] md:w-[45%] pointer-events-none">
         <img
-          src={heroShelf}
-          alt="Air O Display Shelf"
-          className="w-full h-full object-contain object-right"
+          src={heroStool}
+          alt="TAILOR-D portable plywood step stool"
+          className="w-full h-full object-contain object-right-top mix-blend-multiply"
         />
       </div>
+
 
       {/* Bottom-left content - name and tagline, all left-aligned */}
       <div className="relative z-10 max-w-7xl w-full mx-auto px-6 lg:px-12 pb-16 lg:pb-24">

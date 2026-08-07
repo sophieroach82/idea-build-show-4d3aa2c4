@@ -47,7 +47,7 @@ export const Contact = () => {
   ];
 
   return (
-    <section id="contact" className="section-padding bg-foreground text-background">
+    <section id="contact" className="section-padding bg-card text-foreground">
       <div className="max-w-6xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Contact Info */}
@@ -59,7 +59,7 @@ export const Contact = () => {
               <h2 className="display-heading text-3xl md:text-4xl lg:text-5xl">
                 Let's Connect
               </h2>
-              <p className="text-background/70 font-body font-light">
+              <p className="text-muted-foreground font-body font-light">
                 I'm always open to discussing new opportunities, creative projects, or simply connecting with fellow designers.
               </p>
             </div>
@@ -69,18 +69,18 @@ export const Contact = () => {
                 <div key={item.label} className="flex items-start gap-4">
                   <item.icon className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                   <div>
-                    <p className="text-xs uppercase tracking-wider text-background/50 mb-1">
+                    <p className="text-xs uppercase tracking-wider text-muted-foreground mb-1">
                       {item.label}
                     </p>
                     {item.href ? (
                       <a
                         href={item.href}
-                        className="text-background hover:text-primary transition-colors duration-300 font-body"
+                        className="text-foreground hover:text-primary transition-colors duration-300 font-body"
                       >
                         {item.value}
                       </a>
                     ) : (
-                      <p className="text-background font-body">{item.value}</p>
+                      <p className="text-foreground font-body">{item.value}</p>
                     )}
                   </div>
                 </div>
@@ -91,7 +91,7 @@ export const Contact = () => {
               href="https://www.linkedin.com/in/sophie-roach-056961333"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-3 px-6 py-3 border border-background/20 text-background hover:bg-background hover:text-foreground transition-all duration-300 font-body text-sm uppercase tracking-wider"
+              className="inline-flex items-center gap-3 px-6 py-3 border border-border text-foreground hover:bg-foreground hover:text-background transition-all duration-300 font-body text-sm uppercase tracking-wider"
             >
               <Linkedin size={18} />
               Connect on LinkedIn
@@ -101,7 +101,7 @@ export const Contact = () => {
           {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <label htmlFor="name" className="text-xs uppercase tracking-wider text-background/50 font-body">
+              <label htmlFor="name" className="text-xs uppercase tracking-wider text-muted-foreground font-body">
                 Name
               </label>
               <input
@@ -110,13 +110,13 @@ export const Contact = () => {
                 required
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                className="w-full px-4 py-3 bg-transparent border border-background/20 text-background placeholder:text-background/40 focus:border-primary focus:outline-none transition-colors duration-300 font-body"
+                className="w-full px-4 py-3 bg-transparent border border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors duration-300 font-body"
                 placeholder="Your name"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="email" className="text-xs uppercase tracking-wider text-background/50 font-body">
+              <label htmlFor="email" className="text-xs uppercase tracking-wider text-muted-foreground font-body">
                 Email
               </label>
               <input
@@ -125,13 +125,13 @@ export const Contact = () => {
                 required
                 value={formData.email}
                 onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                className="w-full px-4 py-3 bg-transparent border border-background/20 text-background placeholder:text-background/40 focus:border-primary focus:outline-none transition-colors duration-300 font-body"
+                className="w-full px-4 py-3 bg-transparent border border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors duration-300 font-body"
                 placeholder="your@email.com"
               />
             </div>
 
             <div className="space-y-2">
-              <label htmlFor="message" className="text-xs uppercase tracking-wider text-background/50 font-body">
+              <label htmlFor="message" className="text-xs uppercase tracking-wider text-muted-foreground font-body">
                 Message
               </label>
               <textarea
@@ -140,7 +140,7 @@ export const Contact = () => {
                 rows={5}
                 value={formData.message}
                 onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                className="w-full px-4 py-3 bg-transparent border border-background/20 text-background placeholder:text-background/40 focus:border-primary focus:outline-none transition-colors duration-300 font-body resize-none"
+                className="w-full px-4 py-3 bg-transparent border border-border text-foreground placeholder:text-muted-foreground/50 focus:border-primary focus:outline-none transition-colors duration-300 font-body resize-none"
                 placeholder="Your message..."
               />
             </div>
@@ -157,11 +157,11 @@ export const Contact = () => {
         </div>
 
         {/* Footer */}
-        <div className="mt-24 pt-8 border-t border-background/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-background/50 font-body text-sm">
+        <div className="mt-24 pt-8 border-t border-border flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-muted-foreground font-body text-sm">
             © {new Date().getFullYear()} Sophie Roach. All rights reserved.
           </p>
-          <p className="text-background/50 font-body text-sm">
+          <p className="text-muted-foreground font-body text-sm">
             Designed with passion for Industrial Design
           </p>
         </div>

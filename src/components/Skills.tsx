@@ -25,8 +25,19 @@ const skillCategories = [
 
 export const Skills = () => {
   return (
-    <section id="skills" className="section-padding">
-      <div className="max-w-6xl mx-auto">
+    <section id="skills" className="section-padding relative overflow-hidden">
+      {/* Georgia Tech aerial background */}
+      <div
+        className="absolute inset-0 z-0 opacity-[0.15]"
+        style={{
+          backgroundImage: `url(${georgiaTechAerial})`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          filter: 'grayscale(100%)',
+        }}
+      />
+      <div className="max-w-6xl mx-auto relative z-10">
         <div className="space-y-4 mb-16">
           <p className="text-sm uppercase tracking-[0.2em] text-primary font-body">
             Capabilities

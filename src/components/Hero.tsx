@@ -8,7 +8,7 @@ export const Hero = () => {
         <img
           src={heroStool}
           alt="TAILOR-D portable plywood step stool"
-          className="w-full h-full object-contain object-right-top mix-blend-multiply opacity-90"
+          className="w-full h-full object-contain object-right-top mix-blend-multiply opacity-75 contrast-125"
         />
       </div>
 

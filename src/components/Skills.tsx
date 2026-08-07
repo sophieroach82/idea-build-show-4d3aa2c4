@@ -1,3 +1,5 @@
+import georgiaTechAerial from "@/assets/georgia-tech-aerial.jpeg";
+
 const skillCategories = [
   {
     title: "Skills",

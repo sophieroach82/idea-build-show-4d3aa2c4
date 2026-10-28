@@ -1,82 +1,20 @@
-import { Link } from "react-router-dom";
-import { ArrowUpRight } from "lucide-react";
-import studioProjectsCover from "@/assets/studio-projects-cover.jpeg";
-
-const projects = [
-  {
-    id: "studio-projects",
-    title: "Studio Projects",
-    category: "Industrial Design",
-    description: "Product sketches, models, and prototypes from Georgia Tech design studio",
-    image: studioProjectsCover,
-    showImage: true,
-  },
-];
-
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { ArrowUpRight } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { products } from '@/data/products';
+const filters = ['All', 'Furniture', 'Home objects', 'Wearables'];
 export const Portfolio = () => {
-  const handleProjectClick = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  return (
-    <section id="portfolio" className="section-padding bg-card">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-4 mb-16">
-          <div className="space-y-4">
-            <p className="text-sm uppercase tracking-[0.2em] text-primary font-body">
-              Selected Work
-            </p>
-            <h2 className="display-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
-              Portfolio
-            </h2>
-          </div>
-          <p className="text-muted-foreground font-body max-w-md">
-            Explore my work across industrial design.
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-6 lg:gap-8">
-          {projects.map((project, index) => (
-            <Link
-              key={project.id}
-              to={`/project/${project.id}`}
-              onClick={handleProjectClick}
-              className={`group block ${index === 0 ? "md:col-span-2" : ""}`}
-            >
-              <article className="card-hover bg-background overflow-hidden">
-                {project.showImage && project.image && (
-                  <div className={`image-reveal ${index === 0 ? "aspect-[2/1]" : "aspect-[3/2]"}`}>
-                    <img
-                      src={project.image}
-                      alt={project.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                )}
-                <div className="p-6 lg:p-8">
-                  <div className="flex items-start justify-between gap-4">
-                    <div className="space-y-2">
-                      <p className="text-xs uppercase tracking-[0.15em] text-primary font-body">
-                        {project.category}
-                      </p>
-                      <h3 className="font-display text-xl lg:text-2xl text-foreground group-hover:text-primary transition-colors duration-300">
-                        {project.title}
-                      </h3>
-                      <p className="text-muted-foreground font-body text-sm">
-                        {project.description}
-                      </p>
-                    </div>
-                    <ArrowUpRight 
-                      className="text-muted-foreground group-hover:text-primary transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 flex-shrink-0" 
-                      size={24} 
-                    />
-                  </div>
-                </div>
-              </article>
-            </Link>
-          ))}
-        </div>
+  const [filter, setFilter] = useState('All');
+  return <section id="portfolio" className="section-padding bg-background"><div className="page-width">
+    <div className="section-title"><div><p className="meta text-muted-foreground mb-5">01 / Selected work</p><h2 className="editorial-heading">Objects with<br/><em>intention.</em></h2></div><p className="text-muted-foreground max-w-xs text-lg">Product sketches, models, and prototypes from Georgia Tech design studio.</p></div>
+    <div className="flex flex-wrap gap-2 border-b border-border pb-5 mb-8" role="group" aria-label="Filter projects">{filters.map(item => <Button key={item} onClick={()=>setFilter(item)} variant={item === filter ? 'default' : 'ghost'} className="rounded-none" aria-pressed={item === filter}>{item}</Button>)}</div>
+    <div className="grid md:grid-cols-2 gap-x-8 gap-y-12">{products.filter(product => filter === 'All' || product.type === filter).map(product => <Link key={product.id} to={`/project/${product.id}`} className="project-tile group">
+      <div className={`project-image ${product.id === 'tailor-d' ? 'stool-tile' : ''} ${!product.image ? 'type-tile' : ''}`}>
+        {product.image ? <img src={product.image} alt={product.subtitle} loading="lazy" /> : <div><p className="meta text-muted-foreground mb-6">Material exploration / 2026</p><span className="italic">Naturlig</span><p className="text-lg mt-5">Simply, sustainable footwear.</p></div>}
+        <span className="project-open"><ArrowUpRight size={22}/></span>
       </div>
-    </section>
-  );
+      <div className="flex justify-between gap-4 pt-5"><div><h3 className="text-3xl mb-1">{product.name}</h3><p className="text-muted-foreground">{product.subtitle}</p></div><p className="meta text-muted-foreground pt-2">{product.year} / {product.type}</p></div>
+    </Link>)}</div>
+  </div></section>;
 };

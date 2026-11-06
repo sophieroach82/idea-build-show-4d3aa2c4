@@ -37,12 +37,12 @@ export const Skills = () => {
           filter: 'grayscale(100%)',
         }}
       />
-      <div className="max-w-6xl mx-auto relative z-10">
+      <div className="page-width relative z-10">
         <div className="space-y-4 mb-16">
           <p className="text-sm uppercase tracking-[0.2em] text-primary font-body">
-            Capabilities
+            03 / Capabilities
           </p>
-          <h2 className="display-heading text-3xl md:text-4xl lg:text-5xl text-foreground">
+          <h2 className="editorial-heading text-foreground">
             Skills & Expertise
           </h2>
         </div>
@@ -51,9 +51,7 @@ export const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={category.title}
-              className={`p-8 lg:p-10 card-hover ${
-                category.accent ? "bg-primary/5" : "bg-card"
-              }`}
+              className="py-8 border-t border-foreground/30"
             >
               <h3 className="font-display text-xl mb-6 text-foreground">
                 {category.title}
@@ -62,7 +60,7 @@ export const Skills = () => {
                 {category.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="px-4 py-2 text-sm font-body bg-background border border-border text-muted-foreground hover:border-primary hover:text-primary transition-colors duration-300"
+                    className="pr-4 py-1 text-base font-body text-foreground"
                   >
                     {skill}
                   </span>

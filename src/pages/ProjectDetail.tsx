@@ -1,6 +1,7 @@
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, FileText } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
+import { products } from "@/data/products";
 import studioProjectsCover from "@/assets/studio-projects-cover.jpeg";
 import naturligPdf from "@/assets/naturlig-process-book.pdf.asset.json";
 
@@ -225,15 +226,13 @@ const ProjectDetail = () => {
                       </div>
                     )}
                     {studioProject.processPdf && (
-                      <a
-                        href={studioProject.processPdf}
-                        target="_blank"
-                        rel="noopener noreferrer"
+                      <Link
+                        to={`/project/${products.find(p => studioProject.title.startsWith(p.name))?.id ?? "pairs"}`}
                         className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300"
                       >
                         <FileText size={16} />
-                        View Process Book
-                      </a>
+                        Explore Project
+                      </Link>
                     )}
                   </div>
                 ))}
@@ -247,7 +246,7 @@ const ProjectDetail = () => {
             <ol className="space-y-4">
               {project.process.map((step, index) => (
                 <li key={index} className="flex items-start gap-4">
-                  <span className="w-8 h-8 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0 text-primary font-display text-sm">
+                  <span className="w-8 h-8 bg-primary/10 rounded-none flex items-center justify-center flex-shrink-0 text-primary font-display text-sm">
                     {index + 1}
                   </span>
                   <p className="text-muted-foreground font-body font-light pt-1">{step}</p>

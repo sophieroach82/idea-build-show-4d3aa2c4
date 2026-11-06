@@ -48,7 +48,7 @@ const Experience = () => {
       <Navigation />
       
       <main className="pt-24 lg:pt-32">
-        <div className="max-w-4xl mx-auto px-6 lg:px-12 pb-24">
+        <div className="max-w-6xl mx-auto px-6 lg:px-12 pb-24">
           {/* Header */}
           <div className="mb-16">
             <Link
@@ -64,7 +64,7 @@ const Experience = () => {
               <p className="text-sm uppercase tracking-[0.2em] text-primary font-body">
                 Professional Background
               </p>
-              <h1 className="display-heading text-4xl md:text-5xl lg:text-6xl text-foreground">
+              <h1 className="editorial-heading text-foreground">
                 Experience
               </h1>
               <p className="text-lg text-muted-foreground font-body font-light max-w-2xl">
@@ -81,7 +81,7 @@ const Experience = () => {
                 className="relative pl-8 border-l-2 border-border hover:border-primary transition-colors duration-300"
               >
                 {/* Timeline dot */}
-                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary rounded-full" />
+                <div className="absolute -left-[9px] top-0 w-4 h-4 bg-primary" />
                 
                 <div className="space-y-4">
                   <div className="space-y-2">
@@ -109,7 +109,7 @@ const Experience = () => {
                         key={i}
                         className="text-muted-foreground font-body font-light flex items-start gap-3"
                       >
-                        <span className="w-1.5 h-1.5 bg-primary/50 rounded-full mt-2 flex-shrink-0" />
+                        <span className="w-1.5 h-1.5 bg-primary/50 mt-2 flex-shrink-0" />
                         {point}
                       </li>
                     ))}

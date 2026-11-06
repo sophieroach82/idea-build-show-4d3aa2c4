@@ -1,5 +1,5 @@
-# Portfolio refresh
-- [x] Refine the black-and-white serif design using the supplied editorial references.
-- [x] Create individual product pages with integrated process-book content.
-- [x] Add project browsing, chapter navigation, image viewing, and polished navigation interactions.
-- [x] Verify project flows and narrow-screen layouts.
+# Portfolio update
+- [ ] Update experience, education, and the downloadable resume from the new upload.
+- [ ] Feature Halo lighting and keep TAILOR-D; remove Air O, Naturlig, and Pairs from the portfolio.
+- [ ] Center the name-only opening screen, shorten About, and simplify navigation.
+- [ ] Verify project chapters, resume download, and desktop/mobile layouts.

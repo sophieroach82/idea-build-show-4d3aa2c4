@@ -8,6 +8,7 @@ import Experience from "./pages/Experience";
 import Education from "./pages/Education";
 import ProjectDetail from "./pages/ProjectDetail";
 import NotFound from "./pages/NotFound";
+import ProductCaseStudy from "./pages/ProductCaseStudy";
 
 const queryClient = new QueryClient();
 
@@ -21,7 +22,8 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
-          <Route path="/project/:id" element={<ProjectDetail />} />
+          <Route path="/project/studio-projects" element={<ProjectDetail />} />
+          <Route path="/project/:id" element={<ProductCaseStudy />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>

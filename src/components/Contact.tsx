@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { MapPin, Mail, GraduationCap, Linkedin, Send } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { Button } from "@/components/ui/button";
 
 export const Contact = () => {
   const { toast } = useToast();
@@ -15,12 +16,13 @@ export const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1000));
+    const subject = encodeURIComponent(`Portfolio inquiry from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name}\nEmail: ${formData.email}`);
+    window.location.href = `mailto:sophieroach82@gmail.com?subject=${subject}&body=${body}`;
 
     toast({
-      title: "Message Sent!",
-      description: "Thank you for reaching out. I'll get back to you soon.",
+      title: "Email draft ready",
+      description: "Complete your message in your email app.",
     });
 
     setFormData({ name: "", email: "", message: "" });
@@ -48,15 +50,15 @@ export const Contact = () => {
 
   return (
     <section id="contact" className="section-padding bg-card text-foreground">
-      <div className="max-w-6xl mx-auto">
+      <div className="page-width">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="space-y-4">
               <p className="text-sm uppercase tracking-[0.2em] text-primary font-body">
-                Get in Touch
+                04 / Get in Touch
               </p>
-              <h2 className="display-heading text-3xl md:text-4xl lg:text-5xl">
+              <h2 className="editorial-heading">
                 Let's Connect
               </h2>
               <p className="text-muted-foreground font-body font-light">
@@ -145,14 +147,14 @@ export const Contact = () => {
               />
             </div>
 
-            <button
+            <Button
               type="submit"
               disabled={isSubmitting}
               className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
             >
-              {isSubmitting ? "Sending..." : "Send Message"}
+              {isSubmitting ? "Sending..." : "Compose Email"}
               <Send size={16} />
-            </button>
+            </Button>
           </form>
         </div>
 
@@ -162,7 +164,7 @@ export const Contact = () => {
             © {new Date().getFullYear()} Sophie Roach. All rights reserved.
           </p>
           <p className="text-muted-foreground font-body text-sm">
-            Designed with passion for Industrial Design
+            Industrial Design / Georgia Tech
           </p>
         </div>
       </div>

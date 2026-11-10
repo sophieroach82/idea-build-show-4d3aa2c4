@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { resumeUrl } from "@/data/resume";
 
 export const ExperiencePreview = () => {
   return (
@@ -14,16 +16,13 @@ export const ExperiencePreview = () => {
               Experience & Leadership
             </h2>
             <p className="text-muted-foreground font-body max-w-md">
-              From freelance design to DEI leadership and my product development internship at Brasseler USA.
+              Product development at Brasseler USA and President of Georgia Tech’s Collegiate Panhellenic Council.
             </p>
           </div>
-          <Link
-            to="/experience"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300 group whitespace-nowrap"
-          >
-            View Full Resume
-            <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
-          </Link>
+          <div className="flex flex-wrap gap-3">
+            <Button asChild variant="outline" className="rounded-none"><Link to="/experience">View experience<ArrowRight /></Link></Button>
+            <Button asChild variant="link" className="font-normal"><a href={resumeUrl} download="Sophie-Roach-Resume.pdf"><Download />Download Resume</a></Button>
+          </div>
         </div>
       </div>
     </section>

@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, GraduationCap, Award, BookOpen, Globe } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { useEffect } from "react";
+import { education } from "@/data/resume";
 
 const Education = () => {
   useEffect(() => {
@@ -37,16 +38,16 @@ const Education = () => {
 
           {/* Georgia Tech */}
           <section className="mb-16">
-            <div className="p-8 lg:p-12 bg-card card-hover">
+            <div className="py-8 lg:py-12 border-t border-border">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <GraduationCap className="w-6 h-6 text-primary" />
                 </div>
                 <div>
                   <h2 className="font-display text-2xl lg:text-3xl text-foreground">
                     Georgia Institute of Technology
                   </h2>
-                  <p className="text-primary font-body">College of Design</p>
+                  <p className="text-primary font-body">College of Design · {education.period}</p>
                 </div>
               </div>
 
@@ -54,15 +55,11 @@ const Education = () => {
                 <div className="space-y-4">
                   <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Degree</p>
-                    <p className="text-foreground font-body">Bachelor of Science in Industrial Design</p>
+                    <p className="text-foreground font-body">{education.degree}</p>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Minor</p>
-                    <p className="text-foreground font-body">History</p>
-                  </div>
-                  <div>
-                    <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Planned Certificate</p>
-                    <p className="text-foreground font-body">Sustainability or Entrepreneurship</p>
+                    <p className="text-foreground font-body">{education.minor}</p>
                   </div>
                   <div>
                     <p className="text-sm uppercase tracking-wider text-muted-foreground mb-1">Expected Graduation</p>
@@ -80,7 +77,7 @@ const Education = () => {
                     <h3 className="font-display text-lg text-foreground">Relevant Coursework</h3>
                   </div>
                   <div className="flex flex-wrap gap-3">
-                    {["Computer Science (Intro to CS)", "Graphic Design (Intro to Graphic Design)", "Industrial Design (Fundamentals of Design Studio I & II, Intro to ID)", "Art History"].map((course) => (
+                    {education.coursework.map((course) => (
                       <span
                         key={course}
                         className="px-4 py-2 text-sm font-body bg-background border border-border text-muted-foreground"
@@ -101,9 +98,9 @@ const Education = () => {
 
           {/* St. Vincent's Academy */}
           <section>
-            <div className="p-8 lg:p-12 bg-card card-hover">
+            <div className="py-8 lg:py-12 border-t border-border">
               <div className="flex items-start gap-4 mb-6">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <GraduationCap className="w-6 h-6 text-primary" />
                 </div>
                 <div>

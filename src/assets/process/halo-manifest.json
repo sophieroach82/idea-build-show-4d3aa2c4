@@ -1,0 +1,105 @@
+{
+  "halo": {
+    "pages": [
+      {
+        "version": 1,
+        "asset_id": "c5baeb85-1d5c-4b81-902f-86b945e4dff6",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/c5baeb85-1d5c-4b81-902f-86b945e4dff6/halo-1.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/c5baeb85-1d5c-4b81-902f-86b945e4dff6/halo-1.jpg",
+        "original_filename": "halo-1.jpg",
+        "size": 98650,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:47Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "e21ef12b-4d9a-46d8-a170-6e94d0081c73",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/e21ef12b-4d9a-46d8-a170-6e94d0081c73/halo-2.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/e21ef12b-4d9a-46d8-a170-6e94d0081c73/halo-2.jpg",
+        "original_filename": "halo-2.jpg",
+        "size": 298964,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:47Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "9abcfc83-cf61-49bb-9254-176dad6a644d",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/9abcfc83-cf61-49bb-9254-176dad6a644d/halo-3.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/9abcfc83-cf61-49bb-9254-176dad6a644d/halo-3.jpg",
+        "original_filename": "halo-3.jpg",
+        "size": 273726,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:48Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "f7bd4cb5-75c5-4626-be9f-f3638ec9ee28",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/f7bd4cb5-75c5-4626-be9f-f3638ec9ee28/halo-4.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/f7bd4cb5-75c5-4626-be9f-f3638ec9ee28/halo-4.jpg",
+        "original_filename": "halo-4.jpg",
+        "size": 310776,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:47Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "e9939f09-e243-4a33-b3a5-b2969db55747",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/e9939f09-e243-4a33-b3a5-b2969db55747/halo-5.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/e9939f09-e243-4a33-b3a5-b2969db55747/halo-5.jpg",
+        "original_filename": "halo-5.jpg",
+        "size": 203339,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:48Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "352f5ab0-9082-4547-ae3e-9fb93e102dcd",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/352f5ab0-9082-4547-ae3e-9fb93e102dcd/halo-6.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/352f5ab0-9082-4547-ae3e-9fb93e102dcd/halo-6.jpg",
+        "original_filename": "halo-6.jpg",
+        "size": 276711,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:54Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "1a62751b-a03d-4f75-8275-051e7c21297a",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/1a62751b-a03d-4f75-8275-051e7c21297a/halo-7.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/1a62751b-a03d-4f75-8275-051e7c21297a/halo-7.jpg",
+        "original_filename": "halo-7.jpg",
+        "size": 158151,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:54Z"
+      },
+      {
+        "version": 1,
+        "asset_id": "8adf2c37-13ec-46e7-a34a-d690fd5fe59b",
+        "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+        "url": "/__l5e/assets-v1/8adf2c37-13ec-46e7-a34a-d690fd5fe59b/halo-8.jpg",
+        "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/8adf2c37-13ec-46e7-a34a-d690fd5fe59b/halo-8.jpg",
+        "original_filename": "halo-8.jpg",
+        "size": 159233,
+        "content_type": "image/jpeg",
+        "created_at": "2026-11-10T15:10:54Z"
+      }
+    ],
+    "cover": {
+      "version": 1,
+      "asset_id": "445c353c-5282-43d6-95e6-12dd8543affc",
+      "project_id": "6af2f6bd-27e6-4e56-99eb-e0ef73f9e439",
+      "url": "/__l5e/assets-v1/445c353c-5282-43d6-95e6-12dd8543affc/halo-cover.jpg",
+      "r2_key": "a/v1/6af2f6bd-27e6-4e56-99eb-e0ef73f9e439/445c353c-5282-43d6-95e6-12dd8543affc/halo-cover.jpg",
+      "original_filename": "halo-cover.jpg",
+      "size": 116944,
+      "content_type": "image/jpeg",
+      "created_at": "2026-11-10T15:10:54Z"
+    }
+  }
+}

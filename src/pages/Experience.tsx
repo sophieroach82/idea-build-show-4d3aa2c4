@@ -2,41 +2,9 @@ import { Link } from "react-router-dom";
 import { ArrowLeft, Calendar, MapPin } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { useEffect } from "react";
-
-const experiences = [
-  {
-    title: "Engineering Intern — Product Development",
-    organization: "Brasseler USA",
-    period: "May 2026 – July 2026",
-    location: "Savannah, GA",
-    description: [
-      "Produced Device Medical Record documentation for hundreds of Nordent products by reverse-engineering physical devices using Keyence, RAM, and toolmaker gauges, Artec 3D scanning, and bending macros to build SolidWorks part models and engineering drawings",
-      "Contributed to DMR compliance documentation for Nordent scaler hardened-point tips by defining user requirements and translating them into a traceability matrix",
-      "Analyzed production data, cycle times, and machine run times for ~50 cylindrical parts across four families (quick connect drills, twist drills, burs, and pins) while shadowing operators to build a capacity model",
-    ],
-  },
-  {
-    title: "Diversity, Equity, & Inclusion (DEI) Vice President",
-    organization: "Collegiate Panhellenic Council",
-    period: "October 2025 – Present",
-    location: "Atlanta, GA",
-    description: [
-      "Lead DEI initiatives and discussions across eight chapters to facilitate awareness and meaningful dialogue surrounding progressing community values",
-      "Hold bi-weekly meetings with chapter delegates discussing how to better foster inclusive practices among all chapters",
-      "Strengthened communication, leadership, and organizational skills managing an inter-chapter network",
-    ],
-  },
-  {
-    title: "Freelance Graphic Designer",
-    organization: "Self-Employed",
-    period: "2024 – Present",
-    location: "Atlanta, GA",
-    description: [
-      "Collaborated with clients to design cohesive and compelling logos using the Adobe Creative Suite",
-      "Reinforced creative problem solving and management abilities through independent client work",
-    ],
-  },
-];
+import { Button } from "@/components/ui/button";
+import { Download } from "lucide-react";
+import { experiences, resumeUrl } from "@/data/resume";
 
 const Experience = () => {
   useEffect(() => {
@@ -68,10 +36,14 @@ const Experience = () => {
                 Experience
               </h1>
               <p className="text-lg text-muted-foreground font-body font-light max-w-2xl">
-                A journey through leadership, design, and professional development.
+                Product development and campus leadership.
               </p>
             </div>
           </div>
+
+          <Button asChild variant="outline" className="mb-12 rounded-none"><a href={resumeUrl} download="Sophie-Roach-Resume.pdf"><Download />Download Resume</a></Button>
+
+          <Link to="/education" className="inline-flex items-center gap-2 ml-5 text-sm underline underline-offset-4">Education<ArrowLeft className="rotate-180" size={14} /></Link>
 
           {/* Experience Timeline */}
           <div className="space-y-12">
@@ -125,7 +97,7 @@ const Experience = () => {
               <p className="text-muted-foreground font-body">
                 Interested in working together?
               </p>
-              <Link
+              <Button asChild><Link
                 to="/#contact"
                 onClick={() => {
                   setTimeout(() => {
@@ -138,7 +110,7 @@ const Experience = () => {
                 className="inline-flex items-center px-6 py-3 bg-primary text-primary-foreground font-body text-sm uppercase tracking-wider hover:bg-primary/90 transition-all duration-300"
               >
                 Get in Touch
-              </Link>
+              </Link></Button>
             </div>
           </div>
         </div>

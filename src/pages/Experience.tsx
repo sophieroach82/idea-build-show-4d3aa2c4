@@ -3,8 +3,8 @@ import { ArrowLeft, Calendar, MapPin } from "lucide-react";
 import { Navigation } from "@/components/Navigation";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Download } from "lucide-react";
-import { experiences, resumeUrl } from "@/data/resume";
+import { experiences } from "@/data/resume";
+import { ResumeDownload } from "@/components/ResumeDownload";
 
 const Experience = () => {
   useEffect(() => {
@@ -41,7 +41,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <Button asChild variant="outline" className="mb-12 rounded-none"><a href={resumeUrl} download="Sophie-Roach-Resume.pdf"><Download />Download Resume</a></Button>
+          <ResumeDownload className="mb-12 rounded-none" />
 
           <Link to="/education" className="inline-flex items-center gap-2 ml-5 text-sm underline underline-offset-4">Education<ArrowLeft className="rotate-180" size={14} /></Link>
 

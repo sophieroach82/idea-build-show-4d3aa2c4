@@ -1,6 +1,7 @@
 import resumeAsset from '@/assets/sophie-roach-resume.pdf.asset.json';
+import { assetUrl } from '@/lib/asset-url';
 
-export const resumeUrl = resumeAsset.url;
+export const resumeUrl = assetUrl(resumeAsset.url);
 export const education = {
   degree: 'Bachelor of Science in Industrial Design',
   minor: 'History',

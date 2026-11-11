@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Download } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { resumeUrl } from "@/data/resume";
+import { ResumeDownload } from "@/components/ResumeDownload";
 
 export const ExperiencePreview = () => {
   return (
@@ -21,7 +21,7 @@ export const ExperiencePreview = () => {
           </div>
           <div className="flex flex-wrap gap-3">
             <Button asChild variant="outline" className="rounded-none"><Link to="/experience">View experience<ArrowRight /></Link></Button>
-            <Button asChild variant="link" className="font-normal"><a href={resumeUrl} download="Sophie-Roach-Resume.pdf"><Download />Download Resume</a></Button>
+            <ResumeDownload variant="link" className="font-normal" />
           </div>
         </div>
       </div>

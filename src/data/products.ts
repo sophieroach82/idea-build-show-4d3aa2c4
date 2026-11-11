@@ -1,11 +1,12 @@
 import manifest from '@/assets/process/manifest.json';
 import haloManifest from '@/assets/process/halo-manifest.json';
 import stool from '@/assets/hero-stool.png';
+import { assetUrl } from '@/lib/asset-url';
 
 export interface Chapter { title: string; heading: string; text: string; pages: number[] }
 export interface Product { id: 'halo' | 'tailor-d'; name: string; subtitle: string; type: string; year: string; materials: string; tools: string[]; image?: string; overview: string; chapters: Chapter[] }
 export const products: Product[] = [
-  { id: 'halo', name: 'Halo', subtitle: 'Wearable light for sound awareness', type: 'Lighting', year: '2026', materials: 'PLA prototype / warm LED strip / stainless steel bracelet cording', image: haloManifest.halo.cover.url, tools: ['Sketching', 'CAD modeling', '3D printing', 'LED diffusion testing'], overview: 'A wearable lighting concept for people who are hard of hearing. Halo explores how a subtle visual cue could draw attention to meaningful sound outside the wearer’s line of sight. An everyday bracelet brings light, comfort, and sound awareness together.', chapters: [
+  { id: 'halo', name: 'Halo', subtitle: 'Wearable light for sound awareness', type: 'Lighting', year: '2026', materials: 'PLA prototype / warm LED strip / stainless steel bracelet cording', image: assetUrl(haloManifest.halo.cover.url), tools: ['Sketching', 'CAD modeling', '3D printing', 'LED diffusion testing'], overview: 'A wearable lighting concept for people who are hard of hearing. Halo explores how a subtle visual cue could draw attention to meaningful sound outside the wearer’s line of sight. An everyday bracelet brings light, comfort, and sound awareness together.', chapters: [
     { title: 'Research', heading: 'Illuminate what goes unheard.', text: 'Research and market analysis explored missed speech and visual cues. Early sketches considered clocks, timers, and accessories before focusing on a wearable for daily use.', pages: [2,4] },
     { title: 'Form', heading: 'An everyday accessory.', text: 'Watch-inspired studies evolved into a softer, oval form. A central opening reduced bulk and improved diffusion, while a user journey informed comfort, visibility, and use in busy environments.', pages: [3,5] },
     { title: 'Making', heading: 'Shaping the light.', text: 'Printed CAD models tested the face, attachments, and LED placement. Comparing several light sources led to a warm LED strip beneath a white PLA cover, with adjustable bracelet cording.', pages: [6,7] },
@@ -18,4 +19,4 @@ export const products: Product[] = [
     { title: 'Outcome', heading: 'One sheet. Multiple uses.', text: 'The finished stool brings together an integrated railing, two steps, and a seat. Close-up details and use photographs document the final joinery and the product in a tailoring setting.', pages: [13,14,15,16,1] },
   ] },
 ];
-export const processPages = (id: Product['id']) => (id === 'halo' ? haloManifest.halo.pages : manifest[id].pages).map(page => page.url);
+export const processPages = (id: Product['id']) => (id === 'halo' ? haloManifest.halo.pages : manifest[id].pages).map(page => assetUrl(page.url));

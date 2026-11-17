@@ -18,7 +18,7 @@ const skillCategories = [
   },
   {
     title: "Interests",
-    skills: ["Travel", "Fashion", "Yoga", "Running: Half Marathon Finisher"],
+    skills: ["Travel", "Yoga", "Running: Half Marathon Finisher"],
     accent: true,
   },
 ];

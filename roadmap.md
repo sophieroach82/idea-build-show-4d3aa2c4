@@ -5,6 +5,8 @@
 - [x] Verify project chapters, resume download, and desktop/mobile layouts.
 
 ## Image integrity
+- [x] Upload the eight original Halo pictures and replace its cover and process images.
+- [x] Verify the newly uploaded Halo pictures in the project page and enlarged viewer.
 - [x] Check stored images and reproduce missing images on the personal website.
 - [x] Protect hosted image links against relative and external-domain pointers.
 - [x] Verify all project pages and enlarged images after the repair.
